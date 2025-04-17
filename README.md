@@ -1,28 +1,64 @@
 # BSR Bot
 
-**BSR Bot** — это мощный и гибкий Discord-бот с системой тикетов, предназначенной для наборов в клан, обращений в администрацию и других задач. Он предоставляет удобную панель управления с кнопками для быстрого взаимодействия с пользователями и обработки запросов.
+**BSR Bot** is a powerful and flexible Discord bot with a ticket system designed for clan recruitment, administration requests, and other tasks. It provides a convenient control panel with buttons for quick interaction with users and processing requests.
 
-## ⚙️ Возможности
+## ⚙️ Features
 
-- 🎫 **Тикет-система**  
-  Создание тикетов по нажатию кнопки. Подходит для заявок на вступление в клан, вопросов к администрации и прочего.
+- 🎫 **Ticket System**  
+  Create tickets by pressing a button. Suitable for requests to join a clan, questions to the administration, etc.
 
-- 🖱️ **Панель с кнопками**  
-  Удобная система ответов прямо в тикете. Администрация может быстро реагировать, закрывать или перенаправлять тикеты, используя настраиваемые кнопки.
+- 🖱️ **Paneled-Embeds**  
+  Convenient response system directly in the ticket. The administration can quickly respond, close or redirect tickets using customizable buttons.
 
-- ⌨️ **Слеш-команды**  
-  Поддержка современных слеш-команд для взаимодействия с ботом (например, `/setup`, `/reply`, `/close` и др.).
+- ⌨️ **Slash Commands**  
+  Support for modern slash commands for interacting with the bot (e.g. `/setup`, `/reply`, `/close`, etc.).
 
-- ⚙️ **Кастомизация через конфиг**  
-  Все настройки — от названий кнопок до поведения тикетов — можно изменить через конфигурационный файл.
+- ⚙️ **Customizable config**  
+  All settings, from button names to ticket behavior, can be changed via the configuration file.
 
-- 🛠️ **Гибкая настройка**  
-  Любые изменения в логике работы, отображении, ролях и каналах — могут быть внесены через конфиг без необходимости изменять исходный код.
+- 🛠️ **Flexible Settings**  
+  Any changes in the logic of work, display, roles and channels can be made through the config without the need to change the source code.
 
-## 📦 Установка
+## 📦 Installing
 
-1. Клонируйте репозиторий:
+1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/bsr-bot.git
-   cd bsr-bot
+   git clone https://github.com/delicacystudios/BSR.git
+   cd BSR
+   npm install
+   ```
+2. Set up the `config.js` (Default version):
+   ```bash
+module.exports = {
+    bot: {
+        token: ``,
+        prefix: `b/`,
+        clientID: ``,
+        db: ``
+    },
+    
+    serverID: ``,
+
+    message: {
+        colors: {
+            main: `#ff522f`,
+            warn: `YELLOW`,
+            error: `#ff0000`
+        },
+
+        footer: `BSR © Все права защищены!`
+    },
+
+    roles: {
+        Leader: ``,
+        Caller: ``,
+        Combat: ``,
+        Farmila: ``,
+        Farmer: ``,
+        Electro: ``,
+        Builder: ``,
+        member: ``
+    }
+}
+   ```
 
