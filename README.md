@@ -29,7 +29,7 @@
    ```
 2. Set up the `config.js` (Default version):
    ```bash
-      module.exports = {
+   module.exports = {
         bot: {
           token: '',
           prefix: 'b/',
@@ -58,7 +58,7 @@
           Electro: '',
           Builder: '',
           member: ''
-        }
-    }
+       }
+   }
    ```
 
