@@ -19,6 +19,10 @@
 - 🛠️ **Flexible Settings**  
   Any changes in the logic of work, display, roles and channels can be made through the config without the need to change the source code.
 
+## 📦 System requirements
+- **Node.JS** - v20
+- **Discord.JS** - v14.8.0+
+
 ## 📦 Installing
 
 1. Clone the repository:
