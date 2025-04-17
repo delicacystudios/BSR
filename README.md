@@ -65,4 +65,8 @@
        }
    }
    ```
+3. Start the Bot:
+   ```bash
+   node index.js
+   ```
 
